@@ -10,10 +10,10 @@
 	<!-- the entire body must be written by student -->
 	<form>
 		<label for="name">Name: </label>
-		<input type="text" placeholder="Name" required >
+		<input id="name" type="text" placeholder="Name" required >
 		<br>
 		<label for="email">Email: </label>
-		<input type="text" placeholder="Email" required>
+		<input id="email" type="text" placeholder="Email" required>
 		<br>
 		<label for="gender">Gender: </label>
 		<br>
@@ -24,16 +24,29 @@
 		<br>
 		<label>Car Brands: </label>
 		<input id="cars" type="select" placeholder="--Please choose an option--" required>
+		<select id="cars">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+		</select>
 		<br>
+		<label for="age">Age: </label>
 		<input id="age" type="number" required placeholder="age" required>
 		<br>
+		<label for="dob">Date of Birth</label>
 		<input id="dob" type="date" name="DOB" required>
 		<br>
+		<label for="tel">Phone Number</label>
 		<input id="tel" type="tel" name="Telephone" placeholder="xxx-xxx-xxxx">
 		<br>
+		<label for="pass">Password</label>
 		<input id="password" type="password" required placeholder="Password">
 		<br>
-		<input id="tos" type="checkbox" required value="I agree to the TOS"> I agree to the TOS
+		<label for="tos">I agree to the TOS</label>
+		<input id="tos" type="checkbox" required value="I agree to the TOS"> 
+		<br>
+		<button value="submit">Submit</button>
  	</form>
     <script type="text/javascript" src="./script.js">
 		
